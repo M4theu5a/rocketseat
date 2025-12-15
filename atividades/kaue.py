@@ -12,14 +12,15 @@ respostas_corretas = ['Branco', 'Rosa', 'Vermelho']
 def fazer_perguntas():
     pontuacao = 0
 
-    for i in range(len(perguntas)):
-        resposta = input(perguntas[i] + ' ').lower()
+    for pergunta in range(len(perguntas)):
+        resposta = input(perguntas[pergunta] + ' ').lower()
 
-        if resposta == respostas_corretas[i].lower():
+        if resposta == respostas_corretas[pergunta].lower():
             pontuacao += 1
             print('Você acertou!')
         else:
-            print(f'Errou! A resposta correta é: {respostas_corretas[i]}')
+            print(
+                f'Errou! A resposta correta é: {respostas_corretas[pergunta]}')
         print()
 
     return pontuacao
