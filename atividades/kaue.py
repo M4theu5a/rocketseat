@@ -28,3 +28,4 @@ def fazer_perguntas():
 
 pontuacao = fazer_perguntas()
 print(f'SUA PONTUAÇÃO NO MOMENTO É: {pontuacao}')
+print('teste')
